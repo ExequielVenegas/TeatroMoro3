@@ -162,7 +162,7 @@ public class TeatroMoro {
                 return descuento.porcentajeDescuento;
             }
         }
-        return 0.0; // Descuento del 0% para clientes normales o no reconocidos
+        return 0.0;
     }
 
     static boolean asientoOcupado(String ubicacion) {
@@ -175,7 +175,7 @@ public class TeatroMoro {
     }
 
     static void realizarVenta(Scanner scanner) {
-        if (totalEntradasVendidas >= capacidadSala) { // Corregido aquí
+        if (totalEntradasVendidas >= capacidadSala) {
             System.out.println("Lo sentimos, no hay más entradas disponibles.");
             return;
         }
